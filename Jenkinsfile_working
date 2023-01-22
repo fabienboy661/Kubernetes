@@ -6,7 +6,7 @@ pipeline {
 	
 	environment {
 		dockerImage =''
-		registry = "fabien123/project" 
+		registry = "fabien123/jenkins_project" 
 	        registryCredential = 'dockerhub' 
 			
 	}
