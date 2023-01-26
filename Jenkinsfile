@@ -33,7 +33,7 @@ pipeline {
 	    
 	    stage('Build Docker Image') {
 		    steps {
-			    sh 'docker build -f Dockerfile -t fabien123 cd /var/lib/jenkins/workspace/test6/Dockerfile'
+			    sh 'whoami'
 			    script {
 				    myimage = docker.build("fabien123/jenkins_project:${env.BUILD_ID}")
 			    }
